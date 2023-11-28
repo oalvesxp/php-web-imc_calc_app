@@ -14,6 +14,12 @@ if (isset($_POST['calcular'])) {
     $altura = $_POST['altura'];
     $imc = $peso / ($altura * $altura);
     $imc = number_format($imc, 2, '.', '');
+        
+    $nome = $_POST['nome'];
+    $cpf = $_POST['cpf'];
+    $contato = $_POST['contato'];
+    $data = $_POST['data'];
+    $done = true;
 }
 
 ?>
