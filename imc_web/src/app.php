@@ -20,6 +20,9 @@ if (isset($_POST['calcular'])) {
     $contato = $_POST['contato'];
     $data = $_POST['data'];
     $done = true;
+
+    $_SESSION['imc'] = $imc;    
+    $_SESSION['done'] = $done;
 }
 
 ?>
