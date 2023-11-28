@@ -30,6 +30,39 @@
                 <h4>IMC = Peso ÷ Altura²</h4>
                 <p>Mas para simplificar, temos aqui uma calculadora automática. Basta você inserir os dados e o resultado já sai na hora. De posse deste índice é só consultar a tabela que indica os níveis de obesidade.</p>
             </div>
+            <div class="col-sm-6">
+                <form action="../src/app.php" method="POST" accept-charset="utf-8">
+                    <div class="col-sm-12 form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome e sobrenome..." class="form-control" required></br>
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <label for="nome">CPF</label>
+                        <input type="text" name="cpf" id="nome" placeholder="000.000.000-00" class="form-control" required></br>
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <label for="nome">Contato</label>
+                        <input type="text" name="cpf" id="contato" placeholder="+55 (99) 9.99999-9999" class="form-control js-imc-peso mask-imc mask-imc-peso" required></br>
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <label for="data">Data Coleta</label>
+                        <input type="date" name="data" id="data" class="form-control" required></br>
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <label for="data">Peso (Kg)</label>
+                        <input type="number" name="peso" id="peso" placeholder="68.45" class="form-control" required></br>
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <label for="data">Altura (m)</label>
+                        <input type="number" name="altura" id="altura" placeholder="1.75" class="form-control" required></br>
+                    </div>
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-block btn-primary" name="calcular" type="submit">
+                            Calcular
+                        </button>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
