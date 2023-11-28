@@ -23,6 +23,10 @@ if (isset($_POST['calcular'])) {
 
     $_SESSION['imc'] = $imc;    
     $_SESSION['done'] = $done;
+
+    // Query para armazenar os dados no banco
+    $mysql_query = "INSERT INTO pacientes (NOME, CPF, CONTATO, ALTURA, PESO, IMC, DATA_COLETA) VALUES ('$nome', '$cpf', '$contato', '$altura',  '$peso', '$imc', '$data')";
+    $result = mysqli_query($conn, $mysql_query);
 }
 
 ?>
