@@ -28,7 +28,7 @@ if (isset($_POST['calcular'])) {
     $mysql_query = "INSERT INTO pacientes (NOME, CPF, CONTATO, ALTURA, PESO, IMC, DATA_COLETA) VALUES ('$nome', '$cpf', '$contato', '$altura',  '$peso', '$imc', '$data')";
     $result = mysqli_query($conn, $mysql_query);
     if (!$result) {
-        die("Failed to insert data into MySQL: " . mysqli_erro($conn));
+        die("Failed to insert data into MySQL: " . mysqli_error($conn));
     }
     mysqli_close($conn);
 }
